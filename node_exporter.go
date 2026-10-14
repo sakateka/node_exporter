@@ -29,6 +29,7 @@ import (
 	promcollectors "github.com/prometheus/client_golang/prometheus/collectors"
 	versioncollector "github.com/prometheus/client_golang/prometheus/collectors/version"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
+	_ "github.com/prometheus/client_golang/prometheus/promhttp/zstd"
 	"github.com/prometheus/exporter-toolkit/bootstrap"
 
 	"github.com/prometheus/node_exporter/collector"
